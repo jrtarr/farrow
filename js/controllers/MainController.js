@@ -23,6 +23,12 @@ app.controller('MainController', ['$scope', function($scope){
 		hometown: 'West Lafayette, IN',
 		description: 'City Mist was the product of two college classmates, Theo Matz and James Tarr, coming together in a basement apartment to make some music. The result was an indie rock band that garnered a good following both on campus and the surrounding cities in northern Indiana and Illinois. Currently the band is on hiatus while mixing their first studio album.',
 		pic: 'img/CityMist.jpg'
+	},
+	{
+		name: 'NUGGET THE KID',
+		hometown: 'Fort Worth, TX',
+		description: 'Nugget The Kid is Fort Worth\'s hottest and most elusive up-and-coming hip-hop producer. With over a dozen Soundcloud listens, and two lead singles from his upcoming album, Nugget is making waves in the music industry with his innovative sound that has been described as "derivative".',
+		pic: 'img/NuggetPowder.png'
 	}
 	];
 }]);
