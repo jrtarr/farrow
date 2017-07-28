@@ -17,6 +17,12 @@ app.controller('MainController', ['$scope', function($scope){
 		hometown: 'Fort Wayne, IN',
 		description: 'Jack Thomas does the unique job of songwriting, singing, and playing drums. As a working musician in Nashville, Jack has been fortunate to have played with a number of artist\'s as a sideman; Cole Swindell, Brian McComas, Chas Collins, Georgia English, and others. Currently Jack writes and performs in Nashville as one half of the duo, The Outliers.',
 		pic: 'img/jack.jpg'
+	},
+	{
+		name: 'CITY MIST',
+		hometown: 'West Lafayette, IN',
+		description: 'City Mist was the product of two college classmates, Theo Matz and James Tarr, coming together in a basement apartment to make some music. The result was an indie rock band that garnered a good following both on campus and the surrounding cities in northern Indiana and Illinois. Currently the band is on hiatus while mixing their first studio album.',
+		pic: 'img/CityMist.jpg'
 	}
 	];
 }]);

@@ -86,12 +86,13 @@ li > a:hover{
 
 #infoBlock{
 	display: block;
-	width: 860px;
+	width: 90%;
 	height: 450px;
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 100px;
 	background-image: url("../img/stage.jpg");
+	background-size: cover;
 	z-index: -1;
 }
 .infoText{
