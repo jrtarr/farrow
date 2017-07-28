@@ -30,6 +30,22 @@ h1{
 	letter-spacing: .55em;
 	margin-bottom: 0px;
 }
+h2{
+	font-size: 40pt;
+	font-weight: 700;
+	color: rgb(249,185,9);
+	text-align: center;
+	transition: color .5s;
+	padding-top: 25px;
+	margin-bottom: 0;
+}
+
+h2:hover{
+	color: black;
+}
+h3{
+	margin: 0;
+}
 
 h4{
 	font-weight: 400;
@@ -145,3 +161,86 @@ button.control_next {
   width: 160px;
   font-size: 18px;
 }
+ /*---------------------Booking Block-------------------*/
+#bookingBlock{
+	width: 90%;
+	margin: auto;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+#bookAd{
+	width: 50%;
+	height: 264px;
+	background-color: grey;
+	background-image: url(../img/crowd.jpg);
+	background-size: cover;
+	border: solid 2px rgb(249,185,9);
+}
+
+#bookAd > a{
+	text-decoration: none;
+}
+
+#bookAd > p{
+	text-align: center;
+	color: rgb(249,185,9);
+	font-weight: 500;
+	font-size: 12pt;
+}
+
+#mailList{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: center;
+	width: 50%;
+	height: 264px;
+	background-color: black;
+}
+
+table{
+	width: 75%;
+	border: solid 3px rgb(175,175,175);
+}
+
+th{
+	padding: 10px;
+	background-color: rgba(249,185,9,.8);
+	font-weight: 400;
+	width: 100%;
+}
+td{
+	padding: 10px 5px 10px 5px;
+	text-align: right;
+	color: rgb(249,185,9);
+}
+input{
+	margin-right: 10px;
+	width: 75%;
+	background: none;
+	border-style: solid;
+	border-color: rgb(249,185,9);
+	border-width: 0 0 1px 0;
+	outline: none;
+	color: white;
+	text-align: right;
+	font-family: inherit;
+	font-size: 12pt;
+}
+
+.subButton{
+	border: solid 1px orange;
+	background-color: white;
+	color: black;
+	font-size: 16pt;
+	height: 40px;
+	font-weight: 500;
+	width: 100%;
+	text-align: center;
+}
+
