@@ -1,0 +1,148 @@
+*{
+
+}
+
+html{
+	background-color: black;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+
+body{
+
+}
+
+#container{
+	width: 75%;
+	margin: auto;
+}
+
+header{
+	margin-top: 20px;
+}
+
+b{
+	color: orange;
+}
+
+h1{
+	font-weight: 300;
+	letter-spacing: .55em;
+	margin-bottom: 0px;
+}
+
+h4{
+	font-weight: 400;
+	letter-spacing: 1em;
+	font-size: 12pt;
+	margin-top: 0px;
+}
+
+ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+li > a{
+	text-decoration: none;
+	color: rgb(249, 185, 9);
+	font-size: 14pt;
+	transition: color .5s;
+	-webkit-transition: color .5s ;
+}
+li > a:hover{
+	color: white;
+}
+
+#logoBlock{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+
+.logoImg{
+	width: 25%;
+	font-size: 32pt;
+}
+
+/*------------slider---------------*/
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 25px auto;
+  border: solid 2px rgb(249, 185, 9);
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#slider ul li {
+  	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+  	float: left;
+	margin: 0;
+	padding: 0;
+	width: 970px;
+	height: 445px;
+	background: rgb(249, 185, 9);
+	text-align: center;
+}
+.sliderPic{
+	width: 970px;
+}
+
+button.control_prev, button.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: none;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 40px;
+  opacity: 0.5;
+  cursor: pointer;
+  outline: 0;
+}
+
+button.control_prev:hover, button.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+}
+
+button.control_prev {
+  border: none;
+  text-shadow: 3px 6px black;
+}
+
+button.control_next {
+  right: 0;
+  border: none;
+  text-shadow: 2px 4px black;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
