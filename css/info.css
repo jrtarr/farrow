@@ -32,8 +32,7 @@ h2{
 	font-size: 40pt;
 	letter-spacing: .25em;
 	margin-bottom: 5px;
-	padding-left: 25px;
-	border-bottom: solid 2px rgb(249, 185, 9);
+	margin-left: 25px;
 }
 
 h3{
@@ -82,32 +81,4 @@ li > a:hover{
 .logoImg{
 	width: 25%;
 	font-size: 32pt;
-}
-
-.artistContent{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-content: center;
-	align-items: flex-start;
-}
-
-.text{
-	padding-left: 20px;
-}
-
-p{
-	font-size: 20px;
-	font-weight: 200;
-	letter-spacing: .2em
-}
-
-b{
-	font-size: 20pt;
-	font-weight: 300;
-}
-
-.artistPic{
-	width: 525px;
-	border: solid 2px rgb(249, 185, 9);
 }
