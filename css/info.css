@@ -109,3 +109,24 @@ li > a:hover{
 	letter-spacing: .2em;
 	line-height: 25px;
 }
+/*---------------Footer---------------*/
+.foot{
+	background-color: rgb(249,185,9);
+	color: black;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	padding: 10px 0 10px 0;
+	width: 100%;
+	bottom: 0px;
+	height: 40px;
+	left: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+.foot > p{
+	font-size: 12pt;
+	font-weight: 500;
+}
