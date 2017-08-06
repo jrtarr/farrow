@@ -17,19 +17,6 @@ body{
 	margin: auto;
 }
 
-header{
-	margin-top: 20px;
-}
-
-b{
-	color: orange;
-}
-
-h1{
-	font-weight: 300;
-	letter-spacing: .55em;
-	margin-bottom: 0px;
-}
 h2{
 	font-size: 40pt;
 	font-weight: 700;
@@ -46,6 +33,33 @@ h2:hover{
 h3{
 	margin: 0;
 }
+@media (max-width: 768px){
+	*, html, body{
+		overflow-x: hidden;
+	}
+	#container{
+		width: 100%;
+	}
+}
+
+/*------------header---------------*/
+
+header{
+	margin-top: 20px;
+}
+.dropTitle{
+	display: none;
+}
+b{
+	color: orange;
+}
+
+h1{
+	font-weight: 300;
+	letter-spacing: .55em;
+	margin-bottom: 0px;
+}
+
 
 h4{
 	font-weight: 400;
@@ -84,9 +98,51 @@ li > a:hover{
 
 .logoImg{
 	width: 25%;
-	font-size: 32pt;
 }
 
+@media (max-width: 768px){
+	.logoLi{
+		display: none;
+	}
+	.dropTitle{
+		margin-left: 9px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+	}
+	.logoImg{
+		width: 75px;
+	}
+	h1{
+		font-size: 20pt;
+	}
+	ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li{
+		margin: 15px 0 15px 0;
+	}
+	li > a{
+		text-decoration: none;
+		color: rgb(249, 185, 9);
+		font-size: 18pt;
+		transition: color .5s;
+		-webkit-transition: color .5s ;
+	}
+	li > a:hover{
+		color: white;
+	}
+}
 /*------------slider---------------*/
 
 #slider {
@@ -105,11 +161,11 @@ li > a:hover{
 
 #slider ul li {
   	position: relative;
-	display: flex;
+	/*display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: center;
-	align-items: center;
+	align-items: center;*/
   	float: left;
 	margin: 0;
 	padding: 0;
@@ -161,17 +217,23 @@ button.control_next {
   width: 160px;
   font-size: 18px;
 }
- /*---------------------Booking Block-------------------*/
-#bookingBlock{
-	width: 90%;
-	margin: auto;
-	margin-top: 50px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-content: center;
-	align-items: center;
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+/*---------------------------------------------------------*/
+@media (max-width: 768px){
+	#slider {
+		display: none;
+	}
+	.altSlider{
+		width: 100%;
+	}
 }
+ /*---------------------Booking Block-------------------*/
+v
 #bookAd{
 	width: 50%;
 	height: 264px;
@@ -244,6 +306,96 @@ input{
 	text-align: center;
 }
 
+@media (max-width: 768px){
+	#bookingBlock{
+		width: 100%;
+		margin: auto;
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+		border-top: dotted 2px rgb(249, 185, 9);
+	}
+	#bookAd{
+		margin: 25px 0 25px 0;
+		overflow: hidden;
+		width: 100%;
+		height: 164px;
+		background-color: grey;
+		background-image: url(../img/crowd.jpg);
+		background-size: cover;
+		border: solid 2px rgb(249,185,9);
+	}	
+
+	h2{
+		font-size: 18pt;
+	}
+
+	#bookAd > a{
+		text-decoration: none;
+	}
+
+	#bookAd > p{
+		text-align: center;
+		color: rgb(249,185,9);
+		font-weight: 500;
+		font-size: 10pt;
+	}
+
+	#mailList{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-content: flex-start;
+		align-items: center;
+		width: 100%;
+		height: 264px;
+		background-color: black;
+	}
+
+	table{
+		width: 100%;
+		border: solid 3px rgb(175,175,175);
+	}
+
+	th{
+		padding: 10px;
+		background-color: rgba(249,185,9,.8);
+		font-weight: 400;
+		width: 100%;
+	}
+	td{
+		padding: 10px 5px 10px 5px;
+		text-align: right;
+		color: rgb(249,185,9);
+	}
+	input{
+		margin-right: 10px;
+		width: 75%;
+		background: none;
+		border-style: solid;
+		border-color: rgb(249,185,9);
+		border-width: 0 0 1px 0;
+		outline: none;
+		color: white;
+		text-align: right;
+		font-family: inherit;
+		font-size: 12pt;
+	}
+
+	.subButton{
+		border: solid 1px orange;
+		background-color: white;
+		color: black;
+		font-size: 16pt;
+		height: 40px;
+		font-weight: 500;
+		width: 100%;
+		text-align: center;
+	}
+}
 /*------------------VidBlock------------*/
 #vidBlock{
 	display: block;
@@ -257,6 +409,11 @@ input{
 	position: relative;
 	height: 0;
 	padding-bottom: 56.25%;
+}
+@media (max-width: 768px){
+	#vidBlock{
+		width: 100%;
+	}
 }
 /*---------------Footer---------------*/
 .foot{
@@ -279,3 +436,14 @@ input{
 	font-size: 12pt;
 	font-weight: 500;
 }
+/*
+@media (max-width: 768px){
+	.foot{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+	}
+}
+*/
