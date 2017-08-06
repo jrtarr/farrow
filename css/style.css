@@ -345,11 +345,13 @@ input{
 	}
 
 	#mailList{
-		display: flex;
+		/*display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-content: flex-start;
 		align-items: center;
+		*/
+		display: none;
 		width: 100%;
 		height: 264px;
 		background-color: black;
@@ -436,14 +438,8 @@ input{
 	font-size: 12pt;
 	font-weight: 500;
 }
-/*
 @media (max-width: 768px){
-	.foot{
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-content: center;
-		align-items: center;
+	.foot > p{
+		font-size: 10pt;
 	}
 }
-*/

@@ -17,10 +17,15 @@
 <body ng-app="farrowApp">
 	<div id="container">
 		<header>
+			<div class="dropTitle">
+					<img class="logoImg" src="img/feather.svg" alt="farrowFeather">
+					<h1>FARROW</h1>
+					<h4>RECORDS</h4>
+			</div>
 			<ul>
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="artists.html">ARTISTS</a></li>
-				<li>
+				<li class="logoLi">
 					<div id="logoBlock">
 						<img class="logoImg" src="img/feather.svg" alt="farrowFeather">
 						<h1>FARROW</h1>
@@ -42,6 +47,8 @@
 					<div class="text">
 						<b>Hometown: {{artist.hometown}}</b>
 						<p>{{artist.description}}</p>
+						<a href="{{artist.link}}">Band Site <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+</a>
 					</div>
 				</div>
 			</div>

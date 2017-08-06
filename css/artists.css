@@ -83,7 +83,55 @@ li > a:hover{
 	width: 25%;
 	font-size: 32pt;
 }
+.dropTitle{
+	display: none;
+}
+/*------------------Header Query----------------------*/
 
+@media (max-width: 768px){
+	.logoLi{
+		display: none;
+	}
+	.dropTitle{
+		margin-left: 9px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+	}
+	.logoImg{
+		width: 75px;
+	}
+	h1{
+		font-size: 20pt;
+	}
+	ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li{
+		margin: 15px 0 15px 0;
+	}
+	li > a{
+		text-decoration: none;
+		color: rgb(249, 185, 9);
+		font-size: 18pt;
+		transition: color .5s;
+		-webkit-transition: color .5s ;
+	}
+	li > a:hover{
+		color: white;
+	}
+}
+/*------------------Content------------------*/
 .artistContent{
 	display: flex;
 	flex-direction: row;
@@ -106,9 +154,22 @@ b{
 	font-size: 20pt;
 	font-weight: 300;
 }
+.text > a{
+	color: rgb(249, 185, 9);
+	font-weight: 500;
+	font-size: 14pt;
+	text-decoration: none;
+	transition: color .5s;
+	-webkit-transition: color .5s ;
+}
+
+.text > a:hover{
+	color: white;
+}
 
 .artistPic{
 	width: 525px;
+	height: 525px;
 	border: solid 2px rgb(249, 185, 9);
 }
 /*---------------Footer---------------*/
@@ -131,4 +192,9 @@ b{
 .foot > p{
 	font-size: 12pt;
 	font-weight: 500;
+}
+@media (max-width: 768px){
+	.foot > p{
+		font-size: 10pt;
+	}
 }
