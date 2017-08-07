@@ -151,7 +151,9 @@ li > a:hover{
   margin: 20px auto 25px auto;
   border: solid 2px rgb(249, 185, 9);
 }
-
+#slidePlaceholder{
+	display: none;
+}
 #slider ul {
   position: relative;
   margin: 0;
@@ -219,24 +221,33 @@ button.control_next {
 }
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
-/*---------------------------------------------------------*/
-/*---------------------------------------------------------*/
-/*---------------------------------------------------------*/
-/*---------------------------------------------------------*/
-/*---------------------------------------------------------*/
 @media (max-width: 768px){
 	#slider {
 		display: none;
+	}
+	#slidePlaceholder{
+		display: block;
 	}
 	.altSlider{
 		width: 100%;
 	}
 }
  /*---------------------Booking Block-------------------*/
-v
+#bookingBlock{
+	width: 90%;
+	margin: auto;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	border-top: dotted 2px rgb(249, 185, 9);
+}
 #bookAd{
-	width: 50%;
+	width: 80%;
 	height: 264px;
+	margin: 25px 0 0 0;
 	background-color: grey;
 	background-image: url(../img/crowd.jpg);
 	background-size: cover;
@@ -260,6 +271,7 @@ v
 	justify-content: flex-start;
 	align-content: flex-start;
 	align-items: center;
+	display: none;
 	width: 50%;
 	height: 264px;
 	background-color: black;
@@ -345,12 +357,11 @@ input{
 	}
 
 	#mailList{
-		/*display: flex;
+		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-content: flex-start;
 		align-items: center;
-		*/
 		display: none;
 		width: 100%;
 		height: 264px;
